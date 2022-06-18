@@ -7,7 +7,9 @@
     --black-fon: #2F303A;
     --gray-fon: #F5F4FA;
     --main: #757575;
-    --hero-button: #188ce8;     
+    --hero-button: #188ce8;
+    --border-header:#ECECEC;
+    --border-cards:#EEEEEE;
 }
 
 body {
@@ -28,7 +30,7 @@ letter-spacing: 0.03em;
     padding: 94px 15px;
 }
 
-h1, h2, h3, h4, p, li, ul, a {
+h1, h2, h3, h4, p, li, ul, a, div {
     margin: 0;
     padding: 0;
 }
@@ -59,6 +61,7 @@ img {
 .header {
     justify-content: space-between;
     padding: 24px 15px 25px;
+    border-bottom: 1px solid var(--border-header);
 }
 
 .logo {
@@ -114,7 +117,6 @@ margin-right: 50px;
 /*Герой*/
 
 .hero {
-    height: 600px;
     padding: 200px 252px;
     color: var(--white);
     background-color: var(--black-fon);
@@ -320,6 +322,7 @@ margin-right: 8px;
     margin-right: 30px;
     height: calc((100% - 60px) / 3);
     margin-bottom: 30px;
+    width: 370px;
 }
 
 .portfolio-item:nth-last-of-type(-n+3){
@@ -328,6 +331,11 @@ margin-right: 8px;
 
 .portfolio-item:nth-child(3n){
     margin-right: 0;
+}
+
+.border-cards {
+    border: 1px solid var(--border-cards);
+    padding: 24px;
 }
 
 .title-cards {
