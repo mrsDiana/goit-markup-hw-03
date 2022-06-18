@@ -24,10 +24,11 @@ letter-spacing: 0.03em;
 
 .container {
     width: 1200px;
+    padding: 0 15px;
 }
 
 .section{
-    padding: 94px 15px;
+    padding: 94px 0;
 }
 
 h1, h2, h3, h4, p, li, ul, a, div {
@@ -61,7 +62,10 @@ img {
 .header {
     justify-content: space-between;
     padding: 24px 15px 25px;
-    border-bottom: 1px solid var(--border-header);
+}
+
+.border-header{
+border-bottom: 1px solid var(--border-header);
 }
 
 .logo {
@@ -117,7 +121,6 @@ margin-right: 50px;
 /*Герой*/
 
 .hero {
-    padding: 200px 252px;
     color: var(--white);
     background-color: var(--black-fon);
     text-align: center;
@@ -125,6 +128,9 @@ margin-right: 50px;
     line-height: 1.36;
     letter-spacing: 0.06em;
 }
+
+.hero .container {
+    padding: 200px 252px;}
 
 .hero-title {
     font-weight: 900;
